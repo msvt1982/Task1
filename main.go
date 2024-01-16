@@ -5,6 +5,8 @@ import (
 	"time"
 )
 
+var ch chan int
+
 func wiatInerraptByUser(ch chan int) {
 	var name string
 	fmt.Scanf("%s", &name)
@@ -16,13 +18,6 @@ func wiatInerraptByUser(ch chan int) {
 }
 
 func main() {
-	var name string
-	fmt.Scanf("%s", &name)
-	if name == "qwe" {
-		fmt.Print(name)
-	}
-
-	ch := make(chan int)
 	println("Hello World")
 	go wiatInerraptByUser(ch)
 	time.Sleep(10 * time.Second)
