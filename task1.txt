@@ -1,0 +1,19 @@
+# task1
+
+Learning Objectives:
+- Practice how to work with timers
+
+- Identify how Golang handles signals
+
+Instruction:
+1. Read Golang's documentation about the process.
+
+2. Refresh Golang's knowledge about time and channels
+
+Task:
+Write Go program what should write to stdout "Hello World" on startup. It should finish in 10 seconds with the message "Goodbye world".
+
+If the user interrupts the execution earlier, then you should print the message "Stopped by the user after x seconds"
+
+
+https://github.com/msvt1982/GoTest.git
