@@ -7,7 +7,7 @@ import (
 
 var ch chan int
 
-func wiatInerraptByUser(ch chan int) {
+func wiatInerruptByUser(ch chan int) {
 	var name string
 	fmt.Scanf("%s", &name)
 	if name == "qwe" {
@@ -19,7 +19,7 @@ func wiatInerraptByUser(ch chan int) {
 
 func main() {
 	println("Hello World")
-	go wiatInerraptByUser(ch)
+	go wiatInerruptByUser(ch)
 	time.Sleep(10 * time.Second)
 	readCh := <-ch
 	if readCh == 1 {
