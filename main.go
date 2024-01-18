@@ -19,10 +19,13 @@ func wiatInerruptByUser(ch chan int) {
 
 func main() {
 	println("Hello World")
+	now := time.Now()
 	go wiatInerruptByUser(ch)
 	time.Sleep(10 * time.Second)
 	readCh := <-ch
 	if readCh == 1 {
-		println("Goodbye world")
+		now1 := time.Now().Sub(now).Seconds()
+		fmt.Println("Stopped by the user after %v seconds", now1)
 	}
+	println("Goodbye world")
 }
